@@ -2,12 +2,13 @@ const API_URL = 'http://localhost:8000';
 
 async function httpGetPlanets() {
   const response = await fetch(`${API_URL}/planets`);
-  return await response.json()}
+  return await response.json();
+}
 
 async function httpGetLaunches() {
   const response = await fetch(`${API_URL}/launches`);
 
-  const fetchedLaunches = await response.json()
+  const fetchedLaunches = await response.json();
   return fetchedLaunches.sort((a,b)=>{
     return a.flightNumber - b.flightNumber;
   });

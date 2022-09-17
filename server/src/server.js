@@ -1,6 +1,6 @@
 const http = require('http');
 const app = require('./app');
-const { planets } = require('./models/planets.model');
+const { planets, getAllPlanets } = require('./models/planets.model');
 
 const PORT = process.env.PORT || 8000;
 
@@ -22,6 +22,7 @@ async function startServer(){
 }
 
 startServer();
+
 
 
 
