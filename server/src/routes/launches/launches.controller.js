@@ -24,10 +24,11 @@ async function httpAddNewLaunch(req,res){
 
 }
 
-function httpAbortLaunch(req, res){
+async function httpAbortLaunch(req, res){
     const launchId = Number(req.params.id);
 
-    if(!existsLaunchWithId(launchId)){
+    const existsLaunch = await existsLaunchWithId(launchId);
+    if(!existsLaunch){
         return res.status(404).json({
             error: 'Launch not found',
         })
