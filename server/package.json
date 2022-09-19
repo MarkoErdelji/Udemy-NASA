@@ -11,6 +11,9 @@
   "keywords": [],
   "author": "Marko Erdelji",
   "license": "ISC",
+  "jest":{
+    "testEnvironment":"node"
+  },
   "devDependencies": {
     "jest": "^29.0.3",
     "jets": "^0.14.1",
