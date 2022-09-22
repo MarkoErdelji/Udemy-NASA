@@ -24,9 +24,5 @@
   "bugs": {
     "url": "https://github.com/MarkoErdelji/Udemy-NASA/issues"
   },
-  "homepage": "https://github.com/MarkoErdelji/Udemy-NASA#readme",
-  "dependencies": {
-    "mongoose": "^6.6.1",
-    "morgan": "^1.10.0"
-  }
+  "homepage": "https://github.com/MarkoErdelji/Udemy-NASA#readme"
 }
